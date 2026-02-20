@@ -44,7 +44,7 @@ async function copyToClipboard() {
         await navigator.clipboard.writeText(form.elements.namedItem("url").textContent);
         setTimeout(() => {
             form.elements.namedItem("copy").disabled = false
-        }, 500);
+        }, 750);
     } catch (e) {
         console.error(e);
         form.elements.namedItem("copy").value = 'Failed to access clipboard';
